@@ -12,6 +12,7 @@ app.get('/', function(req, res){
   } 
   else if ( hour <= -6 && hour >= -7 ) {
     res.send('Barcade is about to close fool!  Time to drink.');
+    res.send(now + hour + "day is " + day);
   }
   else {
     res.send('Barcade is closed.  You should drink to make yourself feel better.');
