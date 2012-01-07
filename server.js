@@ -10,7 +10,7 @@ app.get('/', function(req, res){
   else if ( hour >= 12 && day == 7 ) {
     res.send('Barcade opens early on Sundays!  Go drink and be with God.');
   } 
-  else if ( hour <= 1 && hour > -7 ) {
+  else if ( hour <= 1 && hour >= -7 ) {
     res.send('Barcade is open!  Time to drink.');
   }
   else {
