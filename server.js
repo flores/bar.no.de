@@ -22,7 +22,7 @@ function checkOpen() {
   }
   console.log(now + hour + "day is " + day);
   return message;
-});
+};
 
 app.get('/', function(req, res){
   res.render('index', { message: checkOpen() })
