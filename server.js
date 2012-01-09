@@ -1,4 +1,5 @@
 var app = require('express').createServer();
+app.register('.html', require('jade'));
 
 function checkOpen() {
   var now  = new Date();
@@ -25,7 +26,7 @@ function checkOpen() {
 };
 
 app.get('/', function(req, res){
-  res.render('index', { message: checkOpen() })
+  res.render('index.html', { message: checkOpen() })
 });
 
 app.listen(process.env.PORT || 8001);
