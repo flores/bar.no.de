@@ -12,7 +12,7 @@ function checkOpen() {
   else if ( hour < 9 && day == 1 ) { 
     var message = 'Dude, Blipsy has been open since noon.  Go and drink!';
   }
-  else if ( ( hour >= 0 || hour < 9 ) && day > 0 ) {
+  else if ( ( hour >= 0 && hour < 9 ) && day > 0 ) {
     var message = 'Barcade is open! Time to drink.';
   }
   else if ( hour < 10 && hour >= 9 ) {
@@ -21,7 +21,7 @@ function checkOpen() {
   else {
     var message = 'Barcade is closed.  You should drink to make yourself feel better.';
   }
-  message = message + now + hour + "day is " + day;
+  //message = message + now + hour + "day is " + day;
   return message;
 };
 
