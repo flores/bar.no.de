@@ -5,7 +5,8 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": ">=2.0"
+    "express": ">=2.0.0",
+    "jade": ">=1.0.0"
   }
 }
 
