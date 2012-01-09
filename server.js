@@ -2,18 +2,19 @@ var app = require('express').createServer();
 
 app.get('/', function(req, res){
   var now  = new Date();
-  var hour = now.getHours() - 7;
+  // UTC
+  var hour = now.getHours();
   var day  = now.getDay();
-  if ( hour >= 16 && day < 7 ) {
+  if ( ( hour >= 23 || hour < 8 ) && day > 0 ) {
     res.send('Barcade is open! Time to drink.');
   }
-  else if ( hour >= 12 && day == 6 ) {
-    res.send('Barcade opens early on Sundays!  Go drink and be with God.');
+  else if ( hour >= 19 && day == 0 ) {
+    res.send('Barcade opens early on Sundays!  Go and drink!');
   } 
   else if ( hour <= 0 ) {
     res.send('Barcade is open! Time to drink.');
   }
-  else if ( hour < 2 && hour >= 1 ) {
+  else if ( hour < 9 && hour >= 8 ) {
     res.send('Barcade is about to close, fool.  Hurry up!');
   }
   else {
