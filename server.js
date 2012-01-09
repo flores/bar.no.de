@@ -5,13 +5,13 @@ app.get('/', function(req, res){
   // UTC
   var hour = now.getHours();
   var day  = now.getDay();
-  if ( ( hour >= 23 || hour < 8 ) && day > 0 ) {
-    res.send('Barcade is open! Time to drink.');
+  if ( hour >= 19 && day == 0 ) {
+    res.send('Blipsy Barcade opens early on Sundays!  Go and drink!');
   }
-  else if ( hour >= 19 && day == 0 ) {
-    res.send('Barcade opens early on Sundays!  Go and drink!');
-  } 
-  else if ( hour <= 0 ) {
+  else if ( hour < 8 && day == 1 ) { 
+    res.send('Dude, Blipsy has been open since noon.  Go and drink!');
+  }
+  else if ( ( hour >= 23 || hour < 8 ) && day > 0 ) {
     res.send('Barcade is open! Time to drink.');
   }
   else if ( hour < 9 && hour >= 8 ) {
