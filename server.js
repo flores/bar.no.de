@@ -21,7 +21,7 @@ function checkOpen() {
   else {
     var message = 'Barcade is closed.  You should drink to make yourself feel better.';
   }
-  message = message + now + hour + "day is " + day);
+  message = message + now + hour + "day is " + day;
   return message;
 };
 
