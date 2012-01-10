@@ -42,7 +42,6 @@ function pickImage() {
     "http://cdn.petalphile.com/blipsy/barcade-regulars.jpg",
     "http://cdn.petalphile.com/blipsy/barcade_weekend.jpg"
   ];
-
 };
 
 app.get('/', function(req, res){

@@ -1,6 +1,8 @@
 {
   "name": "barnode",
-  "version": "0.0.1",
+  "description": "Checks your favorite bar.  in progress",
+  "author": "flores <github@petalphile.com>",
+  "version": "0.0.2",
   "scripts": {
     "start": "node server.js"
   },
