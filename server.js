@@ -3,7 +3,7 @@ var app = require('express').createServer();
 app.register('.html', require('jade'));
 
 function checkOpen() {
-  var now  = new Date;
+  var now  = new TZDate().setTimezone("America/Los_Angeles");
   // UTC
   var hour = now.getHours();
   var day  = now.getDay();
@@ -34,7 +34,7 @@ function checkOpen() {
 
 // jacked from http://bit.ly/wvIbrb
 function checkWeekAndDay() {
-  var date = new Date,
+  var date = new TZDate().setTimezone("America/Los_Angeles"),
     days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
     prefixes = ['First', 'Second', 'Third', 'Fourth', 'Fifth'];
   return prefixes[0 | date.getDate() / 7] + ' ' + days[date.getDay()];

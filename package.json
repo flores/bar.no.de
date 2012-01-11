@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "express": ">=2.0.0",
-    "jade": "latest"
+    "jade": "latest",
+    "zoneinfo": "latest"
   }
 }
 
