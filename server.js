@@ -15,16 +15,16 @@ function checkOpen() {
     var message = 'Dude, Blipsy has been open since noon.  Go and drink!';
   }
   else if ( hour > 16 && day == 1 ) { 
-    var message = '$5 Mojitos or Margaritas.  Go and drink!';
+    var message = 'Barcade is open.  $5 Mojitos or Margaritas.  Go and drink!';
   }
   else if ( hour >= 16 && day == 6 ) {
-    var message = 'Awwwwwwww shit.  Not only is barcade open, it is going to be fun!';
+    var message = 'Awwwwwwww shit: not only is Barcade open, it is going to be fun!';
   }
   else if ( hour >= 16 && day > 0 ) {
     var message = 'Barcade is open! Time to drink.';
   }
   else if ( hour <= 2 ) {
-    var message = 'Dude, last call is at 1:45.  Hurry up!';
+    var message = 'Dude, last call at Barcade is 1:45.  Hurry up!';
   }
   else {
     var message = 'Barcade is closed.  You should drink to make yourself feel better.';
@@ -65,14 +65,14 @@ app.get('/', function(req, res){
   var message = checkOpen();
   var day = checkWeekAndDay();
   if ( /Monday/.test(day) ) {
-    var name = "Cumbia night!";
+    var name = "Caribbtion";
   }
   else if ( /Sunday/.test(day) ) {
     var name = "The Jukebox!";
   }
   else if ( /Tuesday/.test(day) ) {
     var name = "Randy J";
-    var desc = "Hip-Hop, Rap, Old school";
+    var desc = "Hip-Hop, Rap, Old school.";
   }
   else {
     var schedule = require('./schedule');
