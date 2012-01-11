@@ -1,3 +1,4 @@
+process.env.TZ = 'PST8DST';
 var app = require('express').createServer();
 app.register('.html', require('jade'));
 
