@@ -20,6 +20,9 @@ function checkOpen() {
   else if ( hour >= 16 && day == 6 ) {
     var message = 'Awwwwwwww shit: not only is Barcade open, it is going to be fun!';
   }
+  else if ( hour >= 16 && day == 6 ) {
+    var message = 'Awwwwwwww shit.  Not only is barcade open, it is going to be fun!';
+  }
   else if ( hour >= 16 && day > 0 ) {
     var message = 'Barcade is open! Time to drink.';
   }
@@ -72,7 +75,7 @@ app.get('/', function(req, res){
   }
   else if ( /Tuesday/.test(day) ) {
     var name = "Randy J";
-    var desc = "Hip-Hop, Rap, Old school.";
+    var desc = "Hip-Hop, Rap, Old school";
   }
   else {
     var schedule = require('./schedule');
