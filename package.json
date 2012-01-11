@@ -4,7 +4,7 @@
   "author": "flores <github@petalphile.com>",
   "version": "0.0.2",
   "scripts": {
-    "start": "node server.js"
+    "start": "export export TZ='PST8DST'; node server.js"
   },
   "dependencies": {
     "express": ">=2.0.0",
