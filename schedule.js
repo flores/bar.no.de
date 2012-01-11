@@ -17,6 +17,6 @@ this.dj = {
   "First Saturday":	{ "name": "\"Changes.  We had something but it's changing.\" - Ricardo" },
   "Second Saturday":	{ "name": "Disco Stan" },
   "Third Saturday":	{ "name": "\"I don't know what she calls it.  I'm not sure.\" - Ricardo" },
-  "Fourth Saturday":	{ "name": "\"And the last one: It changes also.\" - Ricardo" }
+  "Fourth Saturday":	{ "name": "\"And the last one: It changes also.\" - Ricardo" },
   "Fifth Saturday":	{ "name": "Who knows?!" },
 }
