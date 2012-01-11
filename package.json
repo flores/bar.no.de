@@ -7,9 +7,10 @@
     "start": "TZ='PST8DST' node server.js"
   },
   "dependencies": {
-    "express": ">=2.0.0",
+    "express": "latest",
+    "connect": "latest",
     "jade": "latest",
-    "time": "latest"
+    "DateZ": "latest"
   }
 }
 
