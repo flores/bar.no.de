@@ -8,26 +8,30 @@ function checkOpen() {
   // UTC
   var hour = now.getHours();
   var day  = now.getDay();
-  if ( hour >= 12 && hour <= 18 && day == 0 ) {
-    var message = 'Blipsy Barcade opens early on Sundays!  $3 Margaritas!  Go and drink!';
+  if ( hour >= 12 && hour <= 20 && day == 0 ) {
+      var message = "Blipsy opens at 8pm everyday this weekend.  Sorry, the guys are out of town.";
+  //  var message = 'Blipsy Barcade opens early on Sundays!  $3 Margaritas!  Go and drink!';
   }
-  else if ( hour > 18 && day == 0 ) { 
-    var message = 'Dude, Blipsy has been open since noon.  Go and drink!';
+  //else if ( hour > 18 && day == 0 ) { 
+  else if ( hour > 20 && day == 0 ) { 
+  //  var message = 'Dude, Blipsy has been open since noon.  Go and drink!';
+  var message = 'Awwwwwwww shit.  Not only is barcade open, it is going to be fun!';
+
   }
   else if ( hour > 16 && day == 1 ) { 
     var message = 'Barcade is open.  $5 Mojitos or Margaritas.  Go and drink!';
   }
-  else if ( hour >= 16 && day == 6 ) {
+  else if ( hour >= 20 && day == 6 ) {
     var message = 'Awwwwwwww shit: not only is Barcade open, it is going to be fun!';
   }
-  else if ( hour >= 16 && day == 6 ) {
-    var message = 'Awwwwwwww shit.  Not only is barcade open, it is going to be fun!';
-  }
-  else if ( hour >= 16 && day > 0 ) {
+  else if ( hour >= 20 && day > 0 ) {
     var message = 'Barcade is open! Time to drink.';
   }
   else if ( hour <= 2 ) {
     var message = 'Dude, last call at Barcade is 1:45.  Hurry up!';
+  }
+  else if ( day == 5 || day == 6 ) {
+    var message = 'Blipsy opens at 8pm everyday this weekend.  Sorry, the guys are out of town.';
   }
   else {
     var message = 'Barcade is closed.  You should drink to make yourself feel better.';
