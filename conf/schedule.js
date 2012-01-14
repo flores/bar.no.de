@@ -19,4 +19,13 @@ this.dj = {
   "Third Saturday":	{ "name": "\"I don't know what she calls it.  I'm not sure.\" - Ricardo" },
   "Fourth Saturday":	{ "name": "\"And the last one: It changes also.\" - Ricardo" },
   "Fifth Saturday":	{ "name": "Who knows?!" },
-}
+};
+
+this.hours = {
+  0:			{ "open": 20, "closed_message": "Barcade opens at 8pm everyday this weekend.  Sorry, the fellas are out of town." },
+  1:			{ "open": 16, "closed_message": "Barcade is currently closed.  But come back after 4pm for $5 Mojito or Margarita Monday", "open_message": "Barcade is open!  $5 Margaritas and Mojitos.  Come drink!" },
+  5:			{ "open": 20, "closed_message": "Barcade opens at 8pm everyday this weekend.  Sorry, the fellas are out of town." },
+  6:			{ "open": 20, "closed_message": "Barcade opens at 8pm everyday this weekend.  Sorry, the fellas are out of town." },
+  last_call:		"Dude, last call is at 1:45am.  Hurry up!",
+  default:		{ "open": 16, "closed_message": "Barcade is closed and doesn't open until 4pm.  You should drink to make yourself feel better :(", "open_message": "Barcade is open!  Come drink!" },
+};

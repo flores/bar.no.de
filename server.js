@@ -8,31 +8,27 @@ function checkOpen() {
   // UTC
   var hour = now.getHours();
   var day  = now.getDay();
-  if ( hour >= 12 && hour <= 18 && day == 0 ) {
-    var message = 'Blipsy Barcade opens early on Sundays!  $3 Margaritas!  Go and drink!';
+  var schedule = require('./conf/schedule.js');
+
+  if ( schedule.hours[day] ) {
+    open = schedule.hours[day].open;
+    message_closed =  schedule.hours[day].closed_message;
+    message_open = schedule.hours[day].open_message || schedule.hours["default"].open_message;
+  } else {
+    open = schedule.hours["default"].open;
+    message_closed =  schedule.hours["default"].closed_message;
+    message_open = schedule.hours["default"].open_message;
   }
-  else if ( hour > 18 && day == 0 ) { 
-    var message = 'Dude, Blipsy has been open since noon.  Go and drink!';
+
+  if ( hour >= open ) {
+    var message = message_open;
   }
-  else if ( hour > 16 && day == 1 ) { 
-    var message = 'Barcade is open.  $5 Mojitos or Margaritas.  Go and drink!';
+  else if ( hour < open && hour >= 2 ) { 
+    var message = message_closed; 
   }
-  else if ( hour >= 16 && day == 6 ) {
-    var message = 'Awwwwwwww shit: not only is Barcade open, it is going to be fun!';
+  else { 
+    var message = schedule.hours["last_call"];
   }
-  else if ( hour >= 16 && day == 6 ) {
-    var message = 'Awwwwwwww shit.  Not only is barcade open, it is going to be fun!';
-  }
-  else if ( hour >= 16 && day > 0 ) {
-    var message = 'Barcade is open! Time to drink.';
-  }
-  else if ( hour <= 2 ) {
-    var message = 'Dude, last call at Barcade is 1:45.  Hurry up!';
-  }
-  else {
-    var message = 'Barcade is closed.  You should drink to make yourself feel better.';
-  }
-  //message = message + now + hour + "day is " + day;
   return message;
 };
 
@@ -58,12 +54,12 @@ app.get('/', function(req, res){
     var desc = "Hip-Hop, Rap, Old school";
   }
   else {
-    var schedule = require('./schedule');
+    var schedule = require('./conf/schedule');
     name = schedule.dj[day]["name"];
     desc = schedule.dj[day]["desc"];
   }
-  var images = require('./image_list')
-  image = images.list[Math.floor(Math.random()*images.list.length)];  
+  var images = require('./conf/images_list');
+  var image = images.list[Math.floor(Math.random()*images.list.length)];  
   res.render('index.html', { message: message, image: image, name: name, desc: desc })
 });
 
