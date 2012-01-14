@@ -7,8 +7,8 @@ this.dj = {
   "First Thursday":	{ "name": "Fine Mess", "desc": "Soul/Garage/60s" },
   "Second Thursday":	{ "name": "Mystic Beats", "desc": "'Electronic.  Kind of Kraftwerk-y.  Some Tangerine Dream and stuff.  You know, 70s and 80s pop.' - Ricardo" },
   "Third Thursday":	{ "name": "Smellcade", "desc": "\"It might be called something else.  That's what we call it.  It's Jim Smith - the guy from The Smell.\" - Ricardo" },
-  "Fourth Thursday":	{ "name": "\"I don't know what they call it.  A punk rock night.\" - Ricardo" },
-  "Fifth Thursday":	{ "name": "Who knows?!" },
+  "Fourth Thursday":	{ "name": "CBT" },
+  "Fifth Thursday":	{ "name": "Thrash Thursday", desc: "'Metal up your ass.' - Art" },
   "First Friday":	{ "name": "Adult Situations" },
   "Second Friday":	{ "name": "Space and Faders" },
   "Third Friday":	{ "name": "Body Heat" },
@@ -17,6 +17,6 @@ this.dj = {
   "First Saturday":	{ "name": "\"Changes.  We had something but it's changing.\" - Ricardo" },
   "Second Saturday":	{ "name": "Disco Stan" },
   "Third Saturday":	{ "name": "\"I don't know what she calls it.  I'm not sure.\" - Ricardo" },
-  "Fourth Saturday":	{ "name": "\"And the last one: It changes also.\" - Ricardo" }
+  "Fourth Saturday":	{ "name": "\"And the last one: It changes also.\" - Ricardo" },
   "Fifth Saturday":	{ "name": "Who knows?!" },
 }
