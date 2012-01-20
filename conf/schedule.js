@@ -23,7 +23,9 @@ this.dj = {
 
 this.hours = {
   0:			{ "open": 20, "closed_message": "Barcade opens at 8pm everyday this weekend.  Sorry, the fellas are out of town." },
-  1:			{ "open": 16, "closed_message": "Barcade is currently closed.  But come back after 4pm for $5 Mojito or Margarita Monday", "open_message": "Barcade is open!  $5 Margaritas and Mojitos.  Come drink!" },
+  1:			{ "open": 20, "closed_message": "Barcade opens at 8pm.  Sorry, the fellas are out of town." },
+  //1:			{ "open": 16, "closed_message": "Barcade is currently closed.  But come back after 4pm for $5 Mojito or Margarita Monday", "open_message": "Barcade is open!  $5 Margaritas and Mojitos.  Come drink!" },
+  4:			{ "open": 20, "closed_message": "Barcade opens at 8pm.  Sorry, the fellas are out of town." },
   5:			{ "open": 20, "closed_message": "Barcade opens at 8pm everyday this weekend.  Sorry, the fellas are out of town." },
   6:			{ "open": 20, "closed_message": "Barcade opens at 8pm everyday this weekend.  Sorry, the fellas are out of town." },
   last_call:		"Dude, last call is at 1:45am.  Hurry up!",
