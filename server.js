@@ -63,4 +63,19 @@ app.get('/', function(req, res){
   res.render('index.html', { message: message, image: image, name: name, desc: desc })
 });
 
+app.get('/nerdsandtoughgirls', function(req, res){
+  var today = new Date();
+  var month = today.getMonth();
+  var day = today.getDate();
+  if ( month == 1 && day == 26 ) {
+    var message = "Lets go drink!";
+    var m2 = ""; // nothing funny is coming to me
+  }
+  else {
+    var message = "It is not yet time, friend.";
+    var m2 = "Feburary 26th";
+  }
+  res.render('thedaniel.html', { message: message });
+});
+
 app.listen(process.env.PORT || 8001);
