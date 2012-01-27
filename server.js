@@ -68,14 +68,14 @@ app.get('/nerdsandtoughgirls', function(req, res){
   var month = today.getMonth();
   var day = today.getDate();
   if ( month == 1 && day == 26 ) {
-    var message = "Lets go drink!";
+    var message = "Lets drink!";
     var m2 = ""; // nothing funny is coming to me
   }
   else {
     var message = "It is not yet time, friend.";
-    var m2 = "Feburary 26th";
+    var m2 = "Feburary 26th, Blipsy Barcade.";
   }
-  res.render('thedaniel.html', { message: message });
+  res.render('thedaniel.html', { message: message, m2: m2 });
 });
 
 app.listen(process.env.PORT || 8001);
