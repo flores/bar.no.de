@@ -73,7 +73,7 @@ app.get('/nerdsandtoughgirls', function(req, res){
   }
   else {
     var message = "It is not yet time, friend.";
-    var m2 = "Feburary 26th, Blipsy Barcade.";
+    var m2 = "Sunday, Feburary 26th, Blipsy";
   }
   res.render('thedaniel.html', { message: message, m2: m2 });
 });
