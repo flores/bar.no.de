@@ -72,8 +72,8 @@ app.get('/nerdsandtoughgirls', function(req, res){
     var m2 = ""; // nothing funny is coming to me
   }
   else {
-    var message = "It is not yet time, friend.";
-    var m2 = "Sunday, Feburary 26th, Blipsy";
+    var message = "It happened.  It was amazing.";
+    var m2 = "";
   }
   res.render('thedaniel.html', { message: message, m2: m2 });
 });
