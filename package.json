@@ -4,10 +4,10 @@
   "author": "flores <github@petalphile.com>",
   "version": "0.0.2",
   "scripts": {
-    "start": "TZ='PST8DST' node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "latest",
+    "express": "2.5.5",
     "connect": "latest",
     "jade": "latest",
     "DateZ": "latest"
