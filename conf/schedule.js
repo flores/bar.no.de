@@ -2,7 +2,7 @@ this.dj = {
   "First Wednesday":	{ "name": "Hollywood Hump" },
   "Second Wednesday":	{ "name": "Save The Princess/Hey Brad What's Up" },
   "Third Wednesday":	{ "name": "Grease and Oil", "desc": "Rockabilly" },
-  "Fourth Wednesday":	{ "name": "'The fourth Wednesday is different' - Ricardo" },
+  "Fourth Wednesday":	{ "name": "<a href='/partyhat'>Party Hat!</a>" },
   "Fifth Wednesday":	{ "name": "Who knows?!" },
   "First Thursday":	{ "name": "Fine Mess", "desc": "Soul/Garage/60s" },
   "Second Thursday":	{ "name": "Mystic Beats", "desc": "'Electronic.  Kind of Kraftwerk-y.  Some Tangerine Dream and stuff.  You know, 70s and 80s pop.' - Ricardo" },

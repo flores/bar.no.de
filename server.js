@@ -78,4 +78,8 @@ app.get('/nerdsandtoughgirls', function(req, res){
   res.render('thedaniel.html', { message: message, m2: m2 });
 });
 
+app.get('/partyhat', function(req, res){
+  res.render('partyhat.html');
+});
+
 app.listen(process.env.PORT || 8001);
